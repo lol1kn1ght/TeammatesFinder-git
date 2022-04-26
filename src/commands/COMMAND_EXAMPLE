@@ -1,0 +1,13 @@
+import { argsType, CommandCTXType } from "../types";
+
+export default class Command {
+  public static readonly commandName = COMMAND_NAME;
+
+  constructor(private args: argsType, private command: CommandCTXType) {
+    this.execute();
+  }
+
+  async execute() {
+    // CODE
+  }
+}

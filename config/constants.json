@@ -1,0 +1,12 @@
+{
+  "token": "5149848162:AAHxkxI51VlniPYZhnRLAj_jfTZ9ercQ_Kw",
+  "mongo": {
+    "isAuth": false,
+    "url": "",
+    "pass": "",
+    "ip": "",
+    "port": 25567,
+    "user": "",
+    "db": ""
+  }
+}

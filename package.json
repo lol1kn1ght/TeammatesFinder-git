@@ -1,0 +1,26 @@
+{
+  "name": "teammatesfinder",
+  "version": "1.0.0",
+  "description": "Бот для поиска напарников по играм",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "start": "cd ./dist && node ./Main.js",
+    "build": "rimraf ./dist && swc ./src -d ./dist --copy-files",
+    "launchNodemon": "nodemon --watch \"./src/**\" --ext \"ts\" --exec \"npm run build && npm run start\"",
+    "dev": "npm run launchNodemon"
+  },
+  "dependencies": {
+    "@swc/cli": "^0.1.55",
+    "@swc/core": "^1.2.146",
+    "@swc/helpers": "^0.3.6",
+    "grammy": "^1.7.0",
+    "mongoose": "^6.2.3",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.5"
+  },
+  "author": "loli_knight",
+  "license": "ISC"
+}
