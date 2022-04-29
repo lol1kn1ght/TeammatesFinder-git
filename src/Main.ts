@@ -39,6 +39,7 @@ class Builder {
       try {
         const Command: commandType =
           require(`./commands/${commandFile}`)?.default;
+
         if (!Command) continue;
         const commandName = Command.commandName;
 
